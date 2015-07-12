@@ -1,7 +1,7 @@
 Laravel Blog
 ============
 
-A Laravel 4 package to add a simple blog to a site
+A Laravel 5 package to add a simple blog to a site
 
 ## Features
 
