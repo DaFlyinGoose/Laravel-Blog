@@ -17,7 +17,7 @@
         "php": ">=5.6.0",
         "illuminate/support": "5.*",
         "mayconbordin/rss-l5": "~1.1",
-        "cviebrock/eloquent-sluggable": "dev-master",
+        "cviebrock/eloquent-sluggable": "master",
         "fzaninotto/faker": "1.4.*"
     },
     "autoload": {
