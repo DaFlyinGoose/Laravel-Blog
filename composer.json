@@ -16,7 +16,7 @@
     "require": {
         "php": ">=5.6.0",
         "illuminate/support": "5.*",
-        "thujohn/rss": "dev-master",
+        "mayconbordin/rss-l5": "~1.1",
         "cviebrock/eloquent-sluggable": "1.0.*",
         "fzaninotto/faker": "1.4.*"
     },
