@@ -1,19 +1,23 @@
 {
     "name": "fbf/laravel-blog",
-    "description": "A Laravel 4 package to add a simple blog to a site",
+    "description": "A Laravel 5 package to add a simple blog to a site",
     "keywords": ["laravel","blog"],
     "license": "MIT",
     "authors": [
         {
             "name": "Neil Crookes",
             "email": "neil.crookes@fivebyfiveuk.com"
+        },
+        {
+            "name": "Chris Reid",
+            "email": "chris.reid@nexuspoint.co.uk"
         }
     ],
     "require": {
-        "php": ">=5.3.0",
-        "illuminate/support": "4.*",
-        "thujohn/rss": "dev-master",
-        "cviebrock/eloquent-sluggable": "1.0.*",
+        "php": ">=5.6.0",
+        "illuminate/support": "5.*",
+        "mayconbordin/rss-l5": "~1.1",
+        "cviebrock/eloquent-sluggable": "3.*",
         "fzaninotto/faker": "1.4.*"
     },
     "autoload": {

@@ -1,10 +1,10 @@
 <?php namespace Fbf\LaravelBlog;
 
-use Illuminate\Database\Eloquent\SoftDeletingTrait;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends \Eloquent {
 
-	use SoftDeletingTrait;
+	use SoftDeletes;
 	protected $dates = ['deleted_at'];
 	
 	/**
@@ -309,7 +309,7 @@ class Post extends \Eloquent {
 	 */
 	public function getUrl()
 	{
-		return \URL::action('Fbf\LaravelBlog\PostsController@view', array('slug' => $this->slug));
+		return \URL::action('\Fbf\LaravelBlog\PostsController@view', array('slug' => $this->slug));
 	}
 
 	/**
