@@ -32,13 +32,15 @@ class Post extends \Eloquent {
 	 * Used for Cviebrock/EloquentSluggable
 	 * @var array
 	 */
+	 /* Let use define own sluggable.. 
 	public static $sluggable = array(
 		'build_from' => 'title',
 		'save_to' => 'slug',
 		'separator' => '-',
 		'unique' => true,
 		'include_trashed' => true,
-	);
+	); 
+	*/
 
 	/**
 	 * Query scope for "live" posts, adds conditions for status = APPROVED and published date is in the past
