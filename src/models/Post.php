@@ -27,7 +27,7 @@ class Post extends Model {
 	 *
 	 * @var string
 	 */
-	protected $configPrefix = 'laravel-blog::';
+	protected $configPrefix = 'laravel-blog.';
 
 	/**
 	 * Used for Cviebrock/EloquentSluggable

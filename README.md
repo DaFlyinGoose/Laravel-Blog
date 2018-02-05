@@ -36,7 +36,7 @@ Run the package migration
 
 Publish the config
 
-    php artisan config:publish fbf/laravel-blog
+    php artisan vendor:publish --provider="Fbf\LaravelBlog\LaravelBlogServiceProvider"
 
 Optionally tweak the settings in the many config files for your app
 
