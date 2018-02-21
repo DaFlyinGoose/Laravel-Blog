@@ -11,7 +11,7 @@
 	</h2>
 
 	<p class="item--date">
-		{{ $post->getDate() }}
+		{!! $post->getDate() !!}
 	</p>
 
 	<div class="item--summary">
@@ -32,7 +32,7 @@
 		</div>
 	@endif
 
-	{{ $post->content }}
+	{!! $post->content !!}
 
 	@if (Config::get('laravel-blog.link.show') && !empty($post->link_url) && !empty($post->link_text))
 		<p class="item--external-link">

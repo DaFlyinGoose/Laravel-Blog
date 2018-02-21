@@ -19,6 +19,12 @@ class LaravelBlogServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		$this->loadViewsFrom(__DIR__ . '/../../views', 'laravel-blog');
+		$this->loadTranslationsFrom(__DIR__ . '/../../lang', 'laravel-blog');
+
+		if (\Config::get('laravel-blog.routes.use_package_routes', true))
+		{
+			$this->loadRoutesFrom(__DIR__.'/../../routes.php');
+		}
 
 		$this->publishes([
 			__DIR__ . '/../../config/images.php' => config_path('laravel-blog/images.php'),
@@ -26,13 +32,9 @@ class LaravelBlogServiceProvider extends ServiceProvider {
 			__DIR__ . '/../../config/meta.php' => config_path('laravel-blog/meta.php'),
 			__DIR__ . '/../../config/routes.php' => config_path('laravel-blog/routes.php'),
 			__DIR__ . '/../../config/seed.php' => config_path('laravel-blog/seed.php'),
+			__DIR__ . '/../../config/views.php' => config_path('laravel-blog/views.php'),
 			__DIR__ . '/../../config/you_tube.php' => config_path('laravel-blog/you_tube.php'),
 		]);
-
-		if (\Config::get('laravel-blog.routes.use_package_routes', true))
-		{
-			include __DIR__.'/../../routes.php';
-		}
 
 		\App::register('Thujohn\Rss\RssServiceProvider');
 		\App::register('Cviebrock\EloquentSluggable\ServiceProvider');
